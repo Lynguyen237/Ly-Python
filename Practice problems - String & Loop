@@ -4,6 +4,7 @@
 # front_times('Chocolate', 3)  'ChoChoCho'
 # front_times('Abc', 3)  'AbcAbcAbc'
 
+#SOLUTION #1
 print 
 def front_times(str, n):
   char = ""
@@ -18,8 +19,7 @@ def front_times(str, n):
   return outcome
 print front_times ("ab", 5)
 
-#re prob #5 above, I got it wrong earlier when I put char == str on line 13. 
-#website solution:
+#SOLUTION #2
 
 print
 def front_times(str, n):
