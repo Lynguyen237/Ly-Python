@@ -18,13 +18,17 @@ print sum_target ([2,7,11,15],9)
 
 #=================================
 #SOLUTION 2 - Loop with dictionary
+#Faster solution
 #=================================
 def sum_target (int_array, target):
   dictionary = {}
   for i in range (len(int_array)):
     secondNumber = target - int_array [i]
     if secondNumber in dictionary.keys():
+      #.key() method returns the keys of the dictionary in a list
+      #If the secondNumber is in the list containing the keys of the dictionary 
       secondIndex = int_array.index(secondNumber)
+      #Then variable secondIndex is the index of the number secondNumber in list int_array
       if i != secondIndex:
         return [i, secondIndex]
     dictionary.update({int_array [i]:i})
