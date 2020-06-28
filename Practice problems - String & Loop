@@ -19,6 +19,8 @@ def front_times(str, n):
   return outcome
 print front_times ("ab", 5)
 
+#I made a mistake when setting char == str instead of "=". "==" should be understood as "Is" while "=" is used to assign value to a variable.
+
 #SOLUTION #2
 
 print
