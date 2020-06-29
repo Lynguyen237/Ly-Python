@@ -1,3 +1,4 @@
+#Given a string, idenify the first 3 characters and reprint it x time
 print
 def front_times(str, n):
   front_len = 3
